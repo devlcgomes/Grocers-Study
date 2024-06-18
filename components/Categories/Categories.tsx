@@ -34,7 +34,9 @@ export default function Categories() {
               <Text
                 style={{
                   fontSize: theme.fontSizes.font_base,
-                  color: theme.colors.background_color_white_light,
+                  color: theme.colors.background_color_gray_dark,
+                  maxWidth: 100,
+                  textAlign: "center",
                 }}
               >
                 {category.name}
@@ -48,9 +50,7 @@ export default function Categories() {
 }
 
 const S = StyleSheet.create({
-  container: {
-    marginTop: 20,
-  },
+  container: {},
 
   categories: {
     overflow: "scroll",
@@ -58,27 +58,15 @@ const S = StyleSheet.create({
 
   categoryItemContainer: {
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
   },
 
   categoryItem: {
     padding: 10,
     marginRight: 10,
     borderRadius: 100,
-    backgroundColor: theme.colors.background_color_red_default,
-    flexDirection: "row",
+    flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     gap: 10,
-
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
   },
 });

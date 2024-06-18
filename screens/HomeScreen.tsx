@@ -36,6 +36,10 @@ export default function HomeScreen() {
         </View>
       </View>
 
+      <View style={S.title}>
+        <Text style={S.titleText}>Categorias</Text>
+      </View>
+
       {/* Main */}
 
       <ScrollView
@@ -101,4 +105,16 @@ const S = StyleSheet.create({
   },
 
   mainScrollView: {},
+
+  title: {
+    textAlign: "left",
+    width: "90%",
+    marginBottom: 20,
+  },
+
+  titleText: {
+    fontWeight: "bold",
+    fontSize: theme.fontSizes.font_g,
+    color: theme.colors.background_color_gray_dark,
+  },
 });
